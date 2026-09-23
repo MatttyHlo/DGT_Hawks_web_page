@@ -1,0 +1,23 @@
+/* Design tokens: colors, radii, light/dark themes */
+:root{
+  --bg:#f5f5f4; --surface:#ffffff; --fg:#2e2e2e; --muted:#6f6f6f; --rule:#e2e2e0;
+  --ph:#e8e8e6; --ph-fg:#9a9a98; --btn:#3b3b3b; --btn-fg:#fafafa;
+  --radius:14px; --radius-lg:20px;
+  --logo-filter:none; --logo-blend:multiply;
+  --header-offset:80px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1f1f1f; --surface:#282828; --fg:#e2e2e0; --muted:#a2a2a0; --rule:#383838;
+    --ph:#2f2f2f; --ph-fg:#7a7a78; --btn:#dcdcda; --btn-fg:#1f1f1f;
+    --logo-filter:invert(1); --logo-blend:screen;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1f1f1f; --surface:#282828; --fg:#e2e2e0; --muted:#a2a2a0; --rule:#383838;
+  --ph:#2f2f2f; --ph-fg:#7a7a78; --btn:#dcdcda; --btn-fg:#1f1f1f;
+  --logo-filter:invert(1); --logo-blend:screen;
+}
+@media (max-width:760px){
+  :root{ --header-offset:120px; }
+}

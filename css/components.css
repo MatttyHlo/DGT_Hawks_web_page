@@ -1,0 +1,40 @@
+/* Reusable UI pieces: buttons, cards, placeholders, lists, tables */
+.btns{ display:flex; gap:10px; flex-wrap:wrap; }
+.btns.spaced{ margin-top:28px; }
+.btn{
+  display:inline-block; padding:11px 20px; border-radius:10px;
+  text-decoration:none; font-weight:600; font-size:15.5px;
+  background:var(--surface); color:var(--fg); box-shadow:inset 0 0 0 1px var(--rule);
+  transition:background .15s, box-shadow .15s;
+}
+.btn:hover{ box-shadow:inset 0 0 0 1px var(--muted); }
+.btn.solid{ background:var(--btn); color:var(--btn-fg); box-shadow:none; }
+.btn.solid:hover{ opacity:.9; }
+
+.card{ background:var(--surface); border-radius:var(--radius); box-shadow:0 0 0 1px var(--rule); padding:8px 24px; }
+
+/* Photo placeholder — replace <figure class="ph"> with a real <img> when photos are ready */
+.ph{
+  margin:0; background:var(--ph); color:var(--ph-fg); display:flex; align-items:flex-end;
+  padding:12px 14px; font-size:13.5px; line-height:1.3; aspect-ratio:4/3; width:100%;
+  border-radius:var(--radius);
+}
+.ph.wide{ aspect-ratio:21/9; }
+.ph.tall{ aspect-ratio:4/5; }
+
+.facts{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:48px 0 0; }
+.facts > div{ background:var(--surface); border-radius:var(--radius); padding:20px 22px; box-shadow:0 0 0 1px var(--rule); }
+.facts dt{ font-weight:600; margin-bottom:4px; }
+.facts dd{ margin:0; color:var(--muted); }
+@media (max-width:760px){ .facts{ grid-template-columns:1fr; } }
+
+.plain{ list-style:none; padding:0; margin:0; }
+.plain li{ padding:10px 0; border-bottom:1px solid var(--rule); }
+.plain li:last-child{ border-bottom:0; }
+
+.table-wrap{ overflow-x:auto; }
+table{ border-collapse:collapse; width:100%; min-width:560px; }
+th, td{ text-align:left; padding:14px 16px 14px 0; border-bottom:1px solid var(--rule); vertical-align:top; }
+tr:last-child th, tr:last-child td{ border-bottom:0; }
+thead th{ font-weight:600; font-size:14.5px; color:var(--muted); }
+tbody th{ font-weight:600; white-space:nowrap; }

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prague Hawks – discgolfový tým</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+
+<script src="js/router.js" defer></script>
+<script src="js/news.js" defer></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#/">
+      <img class="logo-img" src="images/logo-small.jpg" alt="" width="46" height="40">
+      <span class="brand-name">Prague Hawks</span>
+    </a>
+    <nav class="main" aria-label="Hlavní navigace">
+      <a href="#/" data-route="domu">Domů</a>
+      <a href="#/treninky" data-route="treninky">Tréninky</a>
+      <a href="#/camp" data-route="camp">Discgolf camp</a>
+      <a href="#/treneri" data-route="treneri">Trenéři</a>
+      <a href="#/aktuality" data-route="aktuality">Aktuality</a>
+      <a href="#/kontakt" data-route="kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= DOMŮ ======================= -->
+<section class="page" id="page-domu" aria-label="Domů">
+  <div class="hero wrap">
+    <!-- Banner background: team-photo.jpg, set on .banner-bg in css/sections.css -->
+    <div class="banner">
+      <div class="banner-bg" role="img" aria-label="Tým Prague Hawks u koše"> </div>
+      <h1><img class="hero-logo" src="images/logo-transparent-background.jpg" alt="Prague Hawks – Disc Golf Team" width="820" height="699"></h1>
+    </div>
+    <p class="lead">Discgolfový tým z Prahy 9, se zaměřením na juniory<br> Trénujeme každé úterý, celý rok</p>
+    <div class="btns">
+      <a class="btn solid" href="#/treninky">Přijď na trénink</a>
+      <a class="btn" href="https://www.facebook.com/praguehawks" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+
+  <div class="wrap block">
+    <div class="split">
+      <div class="measure">
+        <h2>O týmu</h2>
+        <p>Prague Hawks je discgolfový kroužek a zároveň závodní tým. Scházíme se v Praze 9 pod Domem dětí a mládeže Praha 9, od února 2026 fungujeme také jako samostatný spolek Discgolf team Prague Hawks, z.s.</p>
+        <p>Přijímáme začátečníky i pokročilé. Na tréninku se dělíme do výkonnostních skupin a mladší se učí od starších. V sezóně jezdíme na turnaje a dvakrát ročně na společné soustředění.</p>
+      </div>
+      <figure class="ph">Foto – skupina hráčů u koše</figure>
+    </div>
+    <dl class="facts">
+      <div><dt>Pro koho</dt><dd>Děti a mládež 9–18 let, začátečníci i pokročilí</dd></div>
+      <div><dt>Kdy</dt><dd>Úterý 17:00–18:30, od dubna do června do 19:00</dd></div>
+      <div><dt>Kde</dt><dd>Letňany, Krejcárek, v zimě tělocvična Gymnázia Českolipská</dd></div>
+    </dl>
+  </div>
+
+  <div class="news-band" id="aktuality">
+    <div class="wrap wide">
+      <div class="news-head">
+        <h2>Aktuality</h2>
+        <a class="news-follow" href="https://www.facebook.com/praguehawks" target="_blank" rel="noopener">Sledovat na Facebooku →</a>
+      </div>
+      <!-- Filled by js/news.js -->
+      <div class="news" id="news" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRÉNINKY ======================= -->
+<section class="page" id="page-treninky" aria-label="Tréninky">
+  <div class="wrap page-head">
+    <h1>Tréninky</h1>
+    <p>Každé úterý od září do června. Začátečníkům půjčíme disky, stačí přijít ve sportovním.</p>
+  </div>
+
+  <div class="wrap block">
+    <h2>Rozvrh sezóny</h2>
+    <p class="muted subtitle">Sezóna 2026/27, začátek <span class="todo">doplnit datum</span></p>
+    <div class="card table-wrap">
+      <table>
+        <thead><tr><th>Období</th><th>Čas</th><th>Místo</th></tr></thead>
+        <tbody>
+          <tr><th>Září – říjen</th><td>Út 17:00–18:30</td><td>Venku. Lichý týden Letňany, sudý týden Krejcárek (Praha 3)</td></tr>
+          <tr><th>Listopad – březen</th><td>Út 17:00–18:30</td><td>Tělocvična, Gymnázium Českolipská, Českolipská 373, Praha 9 – Prosek</td></tr>
+          <tr><th>Duben – červen</th><td>Út 17:00–19:00</td><td>Venku, místo upřesníme na Facebooku</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="wrap block">
+    <div class="split top">
+      <div>
+        <h2>Co s sebou</h2>
+        <ul class="plain">
+          <li>Sportovní oblečení podle počasí</li>
+          <li>Pití</li>
+          <li>Obuv do parku, v zimě do tělocvičny</li>
+          <li>Disky, pokud máš. Začátečníkům půjčujeme.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Cena</h2>
+        <ul class="plain">
+          <li>1. pololetí: 2 700 Kč</li>
+          <li>2. pololetí: 2 700 Kč</li>
+          <li>Celý rok: 3 700 Kč <span class="todo">ověřit</span></li>
+        </ul>
+        <p class="muted small">V ceně je lektor, pronájem, pomůcky a pojištění. Startovné na turnaje (cca 200 Kč za jednodenní turnaj) a roční poplatek České asociace discgolfu (cca 250 Kč, vybírá se v lednu) se platí zvlášť.</p>
+      </div>
+    </div>
+    <div class="btns spaced">
+      <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSecrAr9eMpRnNxdrUZTAUStKcQ3tUFEwbuS4ijIzWvVBDEf7Q/viewform" target="_blank" rel="noopener">Přihlásit se zde!</a>
+    </div>
+  </div>
+
+  <div class="wrap block">
+    <h2>Z tréninků</h2>
+    <div class="gallery">
+      <figure class="ph span2">Foto z tréninku – hod z tee</figure>
+      <figure class="ph">Foto – putting</figure>
+      <figure class="ph">Foto – tělocvična, zima</figure>
+      <figure class="ph">Foto – Krejcárek</figure>
+      <figure class="ph">Foto – Letňany</figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CAMP ======================= -->
+<section class="page" id="page-camp" aria-label="Discgolf camp">
+  <div class="wrap page-head">
+    <h1>Discgolf camp</h1>
+    <p>Na soustředění jezdíme dvakrát ročně, v létě a na podzim. Pár dní hraní, tréninku a času s týmem. Tady je ohlédnutí za předchozími ročníky.</p>
+  </div>
+
+  <div class="wrap block">
+    <div class="year">
+      <div class="year-head"><h2>2026</h2><span class="muted">Letní camp, <span class="todo">místo</span></span></div>
+      <p class="muted">Krátké shrnutí ročníku: kde jsme byli, kolik nás bylo, co se povedlo. <span class="todo">doplnit</span></p>
+      <div class="gallery">
+        <figure class="ph">Foto z campu 2026</figure>
+        <figure class="ph">Foto z campu 2026</figure>
+        <figure class="ph">Foto z campu 2026</figure>
+      </div>
+    </div>
+    <div class="year">
+      <div class="year-head"><h2>2025</h2><span class="muted">Letní a podzimní soustředění, <span class="todo">místo</span></span></div>
+      <p class="muted">Krátké shrnutí ročníku. <span class="todo">doplnit</span></p>
+      <div class="gallery">
+        <figure class="ph span2">Foto z campu 2025</figure>
+        <figure class="ph">Foto z campu 2025</figure>
+      </div>
+    </div>
+    <div class="year">
+      <div class="year-head"><h2>2024</h2><span class="muted">Letní camp, <span class="todo">místo</span></span></div>
+      <p class="muted">Krátké shrnutí ročníku. <span class="todo">doplnit</span></p>
+      <div class="gallery">
+        <figure class="ph">Foto z campu 2024</figure>
+        <figure class="ph">Foto z campu 2024</figure>
+        <figure class="ph">Foto z campu 2024</figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRENÉŘI ======================= -->
+<section class="page" id="page-treneri" aria-label="Trenéři">
+  <div class="wrap page-head">
+    <h1>Trenéři</h1>
+    <p>Hlavní trenérka a asistenti, kteří v týmu sami vyrostli.</p>
+  </div>
+
+  <div class="wrap block">
+    <article class="coach">
+      <figure class="ph tall">Portrét – Martina Hošková</figure>
+      <div class="measure">
+        <h2>Martina Hošková</h2>
+        <p class="role">Hlavní trenérka, vedoucí týmu</p>
+        <p>S dětmi pracuje od roku 2006, začínala ve skautském oddíle na Praze 8. Vystudovala pedagogiku volného času na univerzitě v Liberci a od roku 2015 vede kroužky v Domě dětí a mládeže Praha 9.</p>
+        <p>Discgolf hraje od roku 2012, má trenérskou licenci a sama aktivně hraje ligu České asociace discgolfu.</p>
+      </div>
+    </article>
+    <article class="coach">
+      <figure class="ph tall">Portrét – asistent/ka</figure>
+      <div class="measure">
+        <h2><span class="todo">Jméno asistenta</span></h2>
+        <p class="role">Asistent trenéra</p>
+        <p class="muted">Krátké bio: jak dlouho hraje, čím se v týmu zabývá, oblíbený disk nebo hřiště. <span class="todo">doplnit</span></p>
+      </div>
+    </article>
+    <article class="coach">
+      <figure class="ph tall">Portrét – asistent/ka</figure>
+      <div class="measure">
+        <h2><span class="todo">Jméno asistenta</span></h2>
+        <p class="role">Asistent trenéra</p>
+        <p class="muted">Krátké bio: jak dlouho hraje, čím se v týmu zabývá, oblíbený disk nebo hřiště. <span class="todo">doplnit</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= KONTAKT (shown on home page only) ======================= -->
+<section id="kontakt" aria-label="Kontakt">
+  <div class="wrap">
+    <div class="split panel">
+      <div>
+        <h2>Kontakt</h2>
+        <p class="muted intro">Chceš se přidat, přijít na zkušební trénink nebo se zeptat na camp? Napiš nám.</p>
+        <div class="btns">
+          <a class="btn solid" href="mailto:martina.hoskova@ddmpraha9.cz">Napsat e‑mail</a>
+          <a class="btn" href="https://www.facebook.com/praguehawks" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <dl>
+        <dt>Trenérka</dt><dd>Martina Hošková</dd>
+        <dt>E‑mail</dt><dd><a href="mailto:martina.hoskova@ddmpraha9.cz">martina.hoskova@ddmpraha9.cz</a></dd>
+        <dt>Telefon</dt><dd><span class="todo">doplnit</span></dd>
+        <dt>Spolek</dt><dd>Discgolf team Prague Hawks, z.s.<br>Vysočanská 237/101, 190 00 Praha 9<br>IČ 24440965</dd>
+        <dt>Kroužek</dt><dd><a href="https://www.ddmpraha9.cz/krouzky/7840-discgolf-tym-prague-hawks" target="_blank" rel="noopener">DDM Praha 9</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Discgolf team Prague Hawks, z.s.</span>
+    <span>Prototyp – fotky a označená místa doplnit</span>
+  </div>
+</footer>
+
+</body>
+</html>
