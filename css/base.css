@@ -5,6 +5,7 @@
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
 html{ scroll-padding-top:calc(var(--header-offset) + env(safe-area-inset-top,0px)); }
+@media (prefers-reduced-motion:no-preference){ html{ scroll-behavior:smooth; } }
 *,*::before,*::after{ box-sizing:inherit; }
 body{
   margin:0; background:var(--bg); color:var(--fg);

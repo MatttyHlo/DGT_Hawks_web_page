@@ -26,9 +26,6 @@ nav.main a[aria-current="page"]{ color:var(--fg); background:var(--surface); box
   nav.main{ margin:6px -14px 0; }
 }
 
-/* Router-controlled pages */
-main > section.page{ display:none; }
-main > section.page.active{ display:block; }
 
 .page-head{ padding-block:64px 32px; }
 .page-head h1{ margin:0; font-size:clamp(34px,5vw,52px); line-height:1.1; font-weight:700; letter-spacing:-.01em; }
@@ -43,8 +40,13 @@ main > section.page.active{ display:block; }
 @media (max-width:860px){ .split{ grid-template-columns:1fr; gap:28px; } }
 
 .gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-.gallery .span2{ grid-column:span 2; }
-@media (max-width:640px){ .gallery{ grid-template-columns:1fr 1fr; } }
+.gallery .span2{ grid-column:span 2; grid-row:span 2; align-self:stretch; }
+@media (max-width:640px){
+  .gallery{ grid-template-columns:1fr 1fr; }
+  /* A lone photo in the last row takes the full width; .span2 fills two whole rows, which flips the parity. */
+  .gallery:not(:has(> .span2)) > :last-child:nth-child(odd),
+  .gallery:has(> .span2) > :last-child:nth-child(even){ grid-column:span 2; }
+}
 
 /* Footer */
 footer.site{ padding-block:28px 36px; font-size:14px; color:var(--muted); }
