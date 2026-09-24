@@ -27,7 +27,7 @@
 <header class="site">
   <div class="wrap bar">
     <a class="brand" href="index.html">
-      <img class="logo-img" src="images/logo-small.jpg" alt="" width="46" height="40">
+      <img src="images/logo-header.png" alt="" width="46" height="39">
       <span class="brand-name">Prague Hawks</span>
     </a>
     <nav class="main" aria-label="Hlavní navigace">

@@ -12,7 +12,6 @@ header.site{
 .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0; }
 .brand img{ width:46px; height:auto; }
 .brand-name{ font-weight:700; font-size:18px; white-space:nowrap; }
-.logo-img{ filter:var(--logo-filter); mix-blend-mode:var(--logo-blend); }
 nav.main{ display:flex; gap:2px; overflow-x:auto; scrollbar-width:none; margin-left:auto; }
 nav.main::-webkit-scrollbar{ display:none; }
 nav.main a{
