@@ -8,7 +8,6 @@
     ['treninky.html', 'Tréninky'],
     ['camp.html', 'Discgolf camp'],
     ['treneri.html', 'Trenéři'],
-    ['index.html#aktuality', 'Aktuality'],
     ['index.html#kontakt', 'Kontakt'],
   ];
 
