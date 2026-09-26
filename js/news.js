@@ -45,6 +45,12 @@
 
   function render(posts) {
     container.innerHTML = posts.slice(0, COUNT).map((p, i) => postHtml(p, i)).join('');
+    // Arriving via a link like index.html#kontakt, the browser jumps to the target before the
+    // posts load; they then push it down out of view, so jump to it again.
+    const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target && container.compareDocumentPosition(target) & Node.DOCUMENT_POSITION_FOLLOWING) {
+      target.scrollIntoView();
+    }
   }
 
   async function load() {

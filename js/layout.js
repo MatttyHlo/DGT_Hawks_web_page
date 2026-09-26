@@ -8,6 +8,8 @@
     ['treninky.html', 'Tréninky'],
     ['camp.html', 'Discgolf camp'],
     ['treneri.html', 'Trenéři'],
+    ['skoly.html', 'Pro školy'],
+    ['teambuilding.html', 'Teambuilding'],
     ['index.html#kontakt', 'Kontakt'],
   ];
 
@@ -26,7 +28,7 @@
 <header class="site">
   <div class="wrap bar">
     <a class="brand" href="index.html">
-      <img src="images/logo-header.png" alt="" width="46" height="39">
+      <img src="images/logo-header.webp" alt="" width="46" height="39">
       <span class="brand-name">Prague Hawks</span>
     </a>
     <nav class="main" aria-label="Hlavní navigace">
