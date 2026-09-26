@@ -15,6 +15,6 @@
   --bg:#1f1f1f; --surface:#282828; --fg:#e2e2e0; --muted:#a2a2a0; --rule:#383838;
   --ph:#2f2f2f; --ph-fg:#7a7a78; --btn:#dcdcda; --btn-fg:#1f1f1f;
 }
-@media (max-width:760px){
+@media (max-width:920px){
   :root{ --header-offset:120px; }
 }

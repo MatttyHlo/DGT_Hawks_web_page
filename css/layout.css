@@ -20,7 +20,7 @@ nav.main a{
 }
 nav.main a:hover{ color:var(--fg); background:var(--ph); }
 nav.main a[aria-current="page"]{ color:var(--fg); background:var(--surface); box-shadow:0 0 0 1px var(--rule); font-weight:600; }
-@media (max-width:760px){
+@media (max-width:920px){
   .bar{ flex-direction:column; align-items:stretch; height:auto; gap:0; padding-top:8px; padding-bottom:8px; }
   nav.main{ margin:6px -14px 0; }
 }

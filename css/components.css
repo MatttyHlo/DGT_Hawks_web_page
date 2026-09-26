@@ -24,6 +24,7 @@
 .ph img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 
 .facts{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:48px 0 0; }
+.facts.flush{ margin-top:0; }
 .facts > div{ background:var(--surface); border-radius:var(--radius); padding:20px 22px; box-shadow:0 0 0 1px var(--rule); }
 .facts dt{ font-weight:600; margin-bottom:4px; }
 .facts dd{ margin:0; color:var(--muted); }
@@ -39,3 +40,5 @@ th, td{ text-align:left; padding:14px 16px 14px 0; border-bottom:1px solid var(-
 tr:last-child th, tr:last-child td{ border-bottom:0; }
 thead th{ font-weight:600; font-size:14.5px; color:var(--muted); }
 tbody th{ font-weight:600; white-space:nowrap; }
+/* Two-column program: text wraps instead of scrolling sideways on phones */
+table.program{ min-width:0; }
